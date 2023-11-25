@@ -1,0 +1,92 @@
+/* General styles - put these straight into your stylesheet */
+
+body {
+    margin: 0;
+}
+
+html {
+    font-family: 'Helvetica neue', Arial, 'sans serif';
+    font-size: 10px;
+    background-color: #ccc;
+    /* adding */
+    box-sizing: border-box;
+}
+
+
+
+/* Rulesets to be matched up with selectors */
+
+.card {
+
+    width: 35em;
+    height: 22em;
+    margin: 5em auto;
+    background-color: red;
+    border: 0.2em solid black;
+    border-radius: 1.5em;
+}
+
+.card header {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+    border-radius: 1.5em 1.5em 0 0;
+}
+
+.card footer {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+    border-radius: 0 0 1.5em 1.5em;
+}
+
+.card article img {
+    max-height: 100%;
+    float: right;
+}
+
+/*Write a ruleset that targets both the card header,
+ and card footer, giving them both a computed total height of 50px
+  (including a content height of 30px and padding of 10px on all sides.) 
+  But express it in ems. */
+
+header, footer {
+    height: 3em;
+    padding: 1em;
+}
+
+/* write a rule that targets all these elements and sets their margin to 0. */
+p, h2 {
+    margin: 0;
+}
+/* we need to give it a specific height. Set the <article>'s height to 120px,
+ but expressed in ems. Also give it a background color of semi-transparent black, 
+resulting in a slightly darker shade that lets the background red color shine 
+through a bit too. */
+article {
+height: 12em;
+background-color: rgba(0, 0, 0, 0.4);
+}
+ /* Write a ruleset that gives the <h2> an effective font size of 20px 
+ (but expressed in ems) and an appropriate line height to place it in 
+ the center of the header's content box. Recall from earlier that the content
+  box height should be 30px — this gives you all the numbers 
+  you need to calculate the line height. */
+
+  h2 {
+    font-size: 1.25em;
+    line-height: 1.5em;
+  }
+  /* Write a ruleset that gives the <p> inside the footer an effective font size
+   of 15px (but expressed in ems) and an appropriate line height to place it in
+    the center of the footer's content box. Recall from earlier that the content
+     box height should be 30px — this gives you all the numbers you need to 
+     calculate the line height.*/
+
+footer p{
+    font-size: 1.125em;
+    line-height: 1.75em;
+}
+article p {
+    padding: 10px;
+    color: white;
+    font-size: 1.2em;
+  }
+  
+  

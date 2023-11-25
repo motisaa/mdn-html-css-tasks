@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Values and Units Task 1: color values</title>
+
+    <style>
+      body {
+        background-color: #fff;
+        color: #333;
+        font:
+          1.2em / 1.5 Helvetica Neue,
+          Helvetica,
+          Arial,
+          sans-serif;
+        padding: 1em;
+        margin: 0;
+      }
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        margin: 1em;
+        padding: 0.5em;
+      }
+      .hex {
+        background-color: #86defa;
+      }
+      /*
+
+Para el canal Red: multiplicamos 1 (primer valor) * 16, lo que nos da un resultado de 16.
+ A eso le sumamos 9 (segundo valor), lo que nos termina dando 25.
+
+Para el canal Green: multiplicamos B (11, primer valor) * 16, lo que nos da un resultado de 176. 
+A eso le sumamos D (13, segundo valor), lo que nos termina dando 189.
+
+Para el canal Blue: multiplicamos 1 (primer valor) * 16, lo que nos da un resultado de 16.
+ A eso le sumamos E (14, segundo valor), lo que nos termina dando */
+ 
+      .rgb {
+        background-color: rgb(134 222 250);
+      }
+
+      .hsl {
+        background-color: hsl(194, 92%, 75%);
+      }
+
+      .transparency {
+        background-color: rgba(134, 223, 250, 0.304);
+      }
+    </style>
+  </head>
+
+  <body>
+    <ul>
+      <li class="hex">hex color</li>
+      <li class="rgb">RGB color</li>
+      <li class="hsl">HSL color</li>
+      <li class="transparency">Alpha value 0.6</li>
+    </ul>
+  </body>
+</html>
